@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AddAnimalComponent } from './add-animal/add-animal.component';
+import { AddAnimalComponent } from './components/add-animal/add-animal.component';
 import { AnimalComponent } from './components/animal/animal.component';
 import { AnimalsComponent } from './components/animals/animals.component';
 
@@ -11,12 +11,10 @@ import { AnimalsComponent } from './components/animals/animals.component';
     AppComponent,
     AddAnimalComponent,
     AnimalComponent,
-    AnimalsComponent
+    AnimalsComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
