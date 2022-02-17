@@ -1,11 +1,11 @@
 export class Animal {
-  type: string;
+  species: string;
   name: string;
   diet: string;
   weight: number;
   hasBeenFed: boolean;
-  constructor(type: string, name: string, diet: string, weight: number) {
-    this.type = type;
+  constructor(species: string, name: string, diet: string, weight: number) {
+    this.species = species;
     this.name = name;
     this.diet = diet;
     this.weight = weight;

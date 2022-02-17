@@ -3,13 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-animal',
   templateUrl: './animal.component.html',
-  styleUrls: ['./animal.component.scss']
+  styleUrls: ['./animal.component.scss'],
 })
 export class AnimalComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  hasBeenFed() {
+    console.log('Click on has been fed');
   }
-
 }

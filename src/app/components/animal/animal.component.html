@@ -1,1 +1,11 @@
-<p>animal works!</p>
+<section>
+    <ul>
+        <li *ngFor="let a of animalList; let i=index">
+            <p>Species: {{a.species}}</p>
+            <p>Name: {{a.name}}</p>
+            <p>Diet: {{a.diet}}</p>
+            <p>Weight: {{a.weight}}</p>
+            <button (click)="hasBeenFed()">Has been fed</button>
+        </li>
+    </ul>
+</section>
