@@ -18,6 +18,7 @@ export class AnimalComponent implements OnInit {
     });
   }
   hasBeenFed() {
+    //Maybe make button unclickable after this
     console.log('Click on has been fed');
   }
 }
