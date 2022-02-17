@@ -9,7 +9,7 @@ import { AnimalStorageService } from 'src/app/services/animal-storage.service';
 })
 export class AnimalComponent implements OnInit {
   animalList: Animal[] = [];
-  numberOfFedAnimals: number[] = [];
+  numberOfFedAnimals: number = 0;
 
   constructor(private service: AnimalStorageService) {}
 
@@ -18,10 +18,12 @@ export class AnimalComponent implements OnInit {
       this.animalList = animalData;
     });
   }
-  hasBeenFed(i: number) {
-    this.service.hasBeenFedData(i);
 
-    //Maybe make button unclickable after this
-    console.log('Click on has been fed' + i + 1);
+  hasBeenFed() {
+    this.numberOfFedAnimals++;
+    this.service.hasBeenFedData(this.numberOfFedAnimals);
+
+    console.log('Click on has been fed');
+    // console.log(this.numberOfFedAnimals);
   }
 }

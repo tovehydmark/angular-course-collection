@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Animal } from 'src/app/modules/Animal';
+import { hasBeenFedClass } from 'src/app/modules/HasBeenFedClass';
 import { AnimalStorageService } from 'src/app/services/animal-storage.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { AnimalStorageService } from 'src/app/services/animal-storage.service';
 })
 export class AnimalsComponent implements OnInit {
   animalList: Animal[] = [];
+  hasBeenFedTotal: hasBeenFedClass = new hasBeenFedClass(2);
 
   constructor(private service: AnimalStorageService) {}
 
@@ -16,6 +18,12 @@ export class AnimalsComponent implements OnInit {
     this.service.animalList$.subscribe((animalData: Animal[]) => {
       this.animalList = animalData;
     });
+
+    this.service.hasBeenFedTotal$.subscribe(
+      (fedAnimalsData: hasBeenFedClass) => {
+        this.hasBeenFedTotal = fedAnimalsData;
+      }
+    );
   }
 
   //Ha en funktion som plussar på animals när man klickar på has been fed
