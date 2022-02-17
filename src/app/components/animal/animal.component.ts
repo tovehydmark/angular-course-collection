@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Animal } from 'src/app/modules/Animal';
+import { AnimalStorageService } from 'src/app/services/animal-storage.service';
 
 @Component({
   selector: 'app-animal',
@@ -6,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./animal.component.scss'],
 })
 export class AnimalComponent implements OnInit {
-  constructor() {}
+  animalList: Animal[] = [];
 
-  ngOnInit(): void {}
+  constructor(private service: AnimalStorageService) {}
+
+  ngOnInit(): void {
+    this.service.animalList$.subscribe((animalData: Animal[]) => {
+      this.animalList = animalData;
+    });
+  }
   hasBeenFed() {
     console.log('Click on has been fed');
   }
