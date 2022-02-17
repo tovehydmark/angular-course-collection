@@ -7,7 +7,12 @@ import { hasBeenFedClass } from '../modules/HasBeenFedClass';
   providedIn: 'root',
 })
 export class AnimalStorageService {
-  private animalList: Animal[] = [];
+  private animalList: Animal[] = [
+    new Animal('Horse', 'Biztro', 'Hay', 240),
+    new Animal('Rabbit', 'Skutte', 'Pellets', 2),
+    new Animal('Dog', 'Frankie', 'Chicken and rice', 3),
+    new Animal('Human', 'Esteban', 'Carrots', 80),
+  ];
   animalList$: Observable<Animal[]> = of(this.animalList);
 
   private hasBeenFedTotal: hasBeenFedClass = new hasBeenFedClass(0);
