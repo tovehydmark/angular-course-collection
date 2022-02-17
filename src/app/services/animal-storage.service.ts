@@ -17,12 +17,9 @@ export class AnimalStorageService {
 
   addAnimal(newAnimalFromUser: Animal) {
     this.animalList.push(newAnimalFromUser);
-    console.log(this.animalList);
   }
 
   hasBeenFedData(numberOfFedAnimals: number) {
     this.hasBeenFedTotal.fed = numberOfFedAnimals;
-
-    console.log(this.hasBeenFedTotal);
   }
 }

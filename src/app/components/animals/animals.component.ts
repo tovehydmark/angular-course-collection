@@ -25,6 +25,4 @@ export class AnimalsComponent implements OnInit {
       }
     );
   }
-
-  //Ha en funktion som plussar på animals när man klickar på has been fed
 }
