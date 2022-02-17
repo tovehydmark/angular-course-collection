@@ -17,4 +17,7 @@ export class AnimalsComponent implements OnInit {
       this.animalList = animalData;
     });
   }
+
+  amountOfFedAnimals: number = 0;
+  //Ha en funktion som plussar på animals när man klickar på has been fed
 }
