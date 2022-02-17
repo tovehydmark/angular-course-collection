@@ -1,1 +1,12 @@
-<p>add-animal works!</p>
+<section>
+    <h1>Welcome to my Zoo!</h1>
+    <p>To add a new animal, please fill in the boxes below.</p>
+
+    <!--Input for type, name, diet, weight-->
+
+    <input type="text" placeholder="Species:" #species>
+    <input type="text" placeholder="Name:" #name>
+    <input type="text" placeholder="Diet:" #diet>
+    <input type="text" placeholder="Weight:" #weight>
+    <button (click)="saveAnimal(species.value, name.value, diet.value, weight.value)">Save new animal</button>
+</section>
