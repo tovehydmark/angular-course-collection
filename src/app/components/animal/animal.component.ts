@@ -22,8 +22,9 @@ export class AnimalComponent implements OnInit {
   hasBeenFed() {
     this.numberOfFedAnimals++;
     this.service.hasBeenFedData(this.numberOfFedAnimals);
+  }
 
-    console.log('Click on has been fed');
-    // console.log(this.numberOfFedAnimals);
+  removeAnimalFunction(i: number) {
+    this.service.removeAnimal(i);
   }
 }

@@ -24,6 +24,10 @@ export class AnimalStorageService {
     this.animalList.push(newAnimalFromUser);
   }
 
+  removeAnimal(i: number) {
+    this.animalList.splice(i, 1);
+  }
+
   hasBeenFedData(numberOfFedAnimals: number) {
     this.hasBeenFedTotal.fed = numberOfFedAnimals;
   }
