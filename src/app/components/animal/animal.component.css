@@ -1,0 +1,2 @@
+section{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:#272B25;color:whitesmoke}section ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;list-style:none;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}section ul li{border:dashed 1px black;margin:10px;width:200px;height:200px}section ul li p{padding-left:30px}section ul li button{padding:5px;margin-left:30px;display:inline-block}
+/*# sourceMappingURL=animal.component.css.map */

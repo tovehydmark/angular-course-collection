@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAC,CACL,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,IAAI,CACd,AAED,AAAA,OAAO,AAAC,CACN,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,GAAG,CASb,AAXD,AAME,OANK,CAML,KAAK,AAAC,CACJ,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,SAAS,CACjB,OAAO,CAAE,IAAI,CACd",
+    "sources": [
+        "add-animal.component.scss"
+    ],
+    "names": [],
+    "file": "add-animal.component.css"
+}

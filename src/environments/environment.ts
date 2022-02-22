@@ -3,8 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
 };
+
+export const weatherUrl =
+  'http://api.weatherapi.com/v1/current.json?key=e70673cd2b084817b0c125713221802&q=London&aqi=no';
 
 /*
  * For easier debugging in development mode, you can import the following file

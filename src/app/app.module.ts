@@ -6,6 +6,7 @@ import { AddAnimalComponent } from './components/add-animal/add-animal.component
 import { HttpClientModule } from '@angular/common/http';
 import { AnimalComponent } from './components/animal/animal.component';
 import { AnimalsComponent } from './components/animals/animals.component';
+import { WeatherComponent } from './components/weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AnimalsComponent } from './components/animals/animals.component';
     AddAnimalComponent,
     AnimalComponent,
     AnimalsComponent,
+    WeatherComponent,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],

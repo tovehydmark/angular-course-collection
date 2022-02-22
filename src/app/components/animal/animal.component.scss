@@ -1,0 +1,33 @@
+section {
+  justify-content: center;
+
+  color: whitesmoke;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+
+    li {
+      border: dashed 1px black;
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+
+      p {
+
+        padding-left: 30px;
+      }
+
+      button {
+        padding: 5px;
+        margin-left: 30px;
+
+        display: inline-block;
+
+      }
+    }
+  }
+
+}
